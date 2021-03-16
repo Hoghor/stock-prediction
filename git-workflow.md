@@ -61,7 +61,7 @@ Now that you have the connected repository locally and git-flow is installed, wo
 
 ### General workflow
 
-The general workflow will be as follows. The live and currently working branch will be the *main branch*. All development of new stuff will be done in the *develop branch*. From the *develop branch*, new *feature branches* will be created where work will be done on new featuers that is going to be implemented. The *feature branches* will then be merged into the develop branch. When the *develop branch* has reached a state where we think it is ready to update the *main branch*, we will do so through a *release branch*. This workflow is demonstrated in the figure below.
+The general workflow will be as follows. The live and currently working branch will be the **main branch**. All development of new stuff will be done in the **develop branch**. From the **develop branch**, new **feature branches** will be created where work will be done on new featuers that is going to be implemented. The **feature branches** will then be merged into the develop branch. When the **develop branch** has reached a state where we think it is ready to update the **main branch**, we will do so through a **release branch**. This workflow is demonstrated in the figure below.
 
 <p align="center">
 	<img src="workflow.png" alt="workflow" width="350"/>
@@ -69,11 +69,11 @@ The general workflow will be as follows. The live and currently working branch w
 
 ### Develop new feature
 
-1. Make sure to be in the *develop branch*.
+1. Make sure to be in the **develop branch**.
 
 	* `git checkout develop`
 
-2. When implementing something new, a new *feature branch* needs to be created. It is on this branch that your work will proceed until it is good enough to be merged together with the *develop* branch.
+2. When implementing something new, a new **feature branch** needs to be created. It is on this branch that your work will proceed until it is good enough to be merged together with the **develop branch**.
 
 	* `git flow feature start name-of-feature-branch`
 
@@ -111,7 +111,7 @@ You will automatically be in the new branch.
 
 		Make sure that your last changes are committed and pushed to GitHub. Click on *Pull request* and follow the steps.
 
-		Let others review and when everything seems fine you can either merge the two branches together on GitHub and then delete the *feature branch*, or you can merge them locally by:
+		Let others review and when everything seems fine you can either merge the two branches together on GitHub and then delete the **feature branch**, or you can merge them locally by:
 
 		* `git checkout develop`
 		* `git flow feature finish name-of-feature-branch`
@@ -121,11 +121,11 @@ You will automatically be in the new branch.
 
 ### Publish new source code
 
-When the code in the *develop branch* is good enough and the live code is ready for a new version we need to merge it to the *main branch*. This is done via a temporary branch called a *release branch* in order to keep the *develop branch* alive.
+When the code in the **develop branch** is good enough and the live code is ready for a new version we need to merge it to the **main branch**. This is done via a temporary branch called a **release branch** in order to keep the **develop branch** alive.
 
 
 
-1. Make sure to be in the *develop branch*.
+1. Make sure to be in the **develop branch**.
 
 	* `git checkout develop`
 
@@ -133,7 +133,7 @@ When the code in the *develop branch* is good enough and the live code is ready 
 
 	* `git tag -l`
 
-2. Create a new *release branch* from the *develop branch* with the branch-name = tag+one-increment.
+2. Create a new **release branch** from the **develop branch** with the branch-name = tag+one-increment.
 
 	* `git flow release start branch-name`
 
@@ -143,10 +143,10 @@ When the code in the *develop branch* is good enough and the live code is ready 
 
 	* `git flow release finish branch-name`
 
-	The release is now merged into the *main branch* and the *release branch* is deleted.
+	The release is now merged into the **main branch** and the **release branch** is deleted.
 
-4. We now need to push the *main branch* to GitHub so other people can make use of the changes.
+4. We now need to push the **main branch** to GitHub so other people can make use of the changes.
 
 	* `git push origin main`
 
-	The new changes are now availible in the *main branch*.
+	The new changes are now availible in the **main branch**.
