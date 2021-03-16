@@ -58,7 +58,7 @@ Now that you have the connected repository locally and git-flow is installed, wo
 
 The general workflow will be as follows. The live and currently working branch will be the *main branch*. All development of new stuff will be done in the *development branch*. From the *development branch*, new *feature branches* will be created where work will be done on new featuers that is going to be implemented. The *feature branches* will then be merged into the development branch. When the *development branch* has reached a state where we think it is ready to update the *main branch*, we will do so through a *release branch*. This workflow is demonstrated in the figure below.
 
-![workflow](workflow.png)
+<img src="workflow.jpg" alt="workflow" width="350"/>
 
 1. When implementing something new, a new *feature branch* needs to be created. It is on this branch that your work will proceed until it is good enough to be merged together with the *develop* branch.
 
