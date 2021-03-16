@@ -97,15 +97,15 @@ You will automatically be in the new branch.
 
 4. When you are happy with your new feature and want to add it for everyone else to use, there are two possible options for doing this.
 
-	1. *Merge locally*. This is a quick way of merging new features but it prevents other people from reviewing them first. Git flow comes in handy here since it boils the process down to just one line.
+	1. **Merge locally**. This is a quick way of merging new features but it prevents other people from reviewing them first. Git flow comes in handy here since it boils the process down to just one line.
 
 		* `git flow feature finish name-of-feature-branch`
 
-		The feature is now merged into the *develop branch* and the *feature branch* is deleted. We now need to push the *develop branch* to GitHub so other people can make use of the changes.
+		The feature is now merged into the **develop branch** and the **feature branch** is deleted. We now need to push the **develop branch** to GitHub so other people can make use of the changes.
 
 		* `git push origin develop`
 
-		Your new features are now availible in the *develop branch*.
+		Your new features are now availible in the **develop branch**.
 
 	2. **Merge on GitHub** This approach will make it more transparent to others what your new features do since they will get a chance to review them. This however might take some extra time.
 
