@@ -101,23 +101,23 @@ You will automatically be in the new branch.
 
 		* `git flow feature finish name-of-feature-branch`
 
-	The feature is now merged into the *develop branch* and the *feature branch* is deleted. We now need to push the *develop branch* to GitHub so other people can make use of the changes.
+		The feature is now merged into the *develop branch* and the *feature branch* is deleted. We now need to push the *develop branch* to GitHub so other people can make use of the changes.
 
 		* `git push origin develop`
 
-	Your new features are now availible in the *develop branch*.
+		Your new features are now availible in the *develop branch*.
 
 	2. *Merge on GitHub* This approach will make it more transparent to others what your new features do since they will get a chance to review them. This however might take some extra time.
 
-	Make sure that your last changes are committed and pushed to GitHub. Click on *Pull request* and follow the steps.
+		Make sure that your last changes are committed and pushed to GitHub. Click on *Pull request* and follow the steps.
 
-	Let others review and when everything seems fine you can either merge the two branches together on GitHub and then delete the *feature branch*, or you can merge them locally by:
+		Let others review and when everything seems fine you can either merge the two branches together on GitHub and then delete the *feature branch*, or you can merge them locally by:
 
 		* `git checkout develop`
 		* `git flow feature finish name-of-feature-branch`
 		* `git push origin develop`
 
-	GitHub will automatically recognize that the two branches have been merged and close the pull request.
+		GitHub will automatically recognize that the two branches have been merged and close the pull request.
 
 ### Publish new source code
 
@@ -137,16 +137,16 @@ When the code in the *develop branch* is good enough and the live code is ready 
 
 	* `git flow release start branch-name`
 
-You will automatically be in the new branch.
+	You will automatically be in the new branch.
 
 3. Publish the new code to the main branch.
 
 	* `git flow release finish branch-name`
 
-The release is now merged into the *main branch* and the *release branch* is deleted.
+	The release is now merged into the *main branch* and the *release branch* is deleted.
 
 4. We now need to push the *main branch* to GitHub so other people can make use of the changes.
 
 	* `git push origin main`
 
-The new changes are now availible in the *main branch*.
+	The new changes are now availible in the *main branch*.
