@@ -29,6 +29,7 @@ Git flow is a high level branching model for git. It is easy to use when working
 
 * Print working directory: `pwd`
 * Change directory: `cd`
+* Change to parent directory: `cd ..`
 * List files in directory: `ls`
 
 **Git commands**
