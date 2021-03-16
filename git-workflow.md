@@ -1,4 +1,4 @@
-### Workflow
+# Workflow
 
 Everything below takes place in your terminal.
 
@@ -59,7 +59,7 @@ Git flow is a high level branching model for git. It is easy to use when working
 
 Now that you have the connected repository locally and git-flow is installed, work can be started. It is nice to always follow this workflow since it is proven to be efficient and minimizes the errors.
 
-# General workflow
+### General workflow
 
 The general workflow will be as follows. The live and currently working branch will be the *main branch*. All development of new stuff will be done in the *develop branch*. From the *develop branch*, new *feature branches* will be created where work will be done on new featuers that is going to be implemented. The *feature branches* will then be merged into the develop branch. When the *develop branch* has reached a state where we think it is ready to update the *main branch*, we will do so through a *release branch*. This workflow is demonstrated in the figure below.
 
@@ -67,7 +67,7 @@ The general workflow will be as follows. The live and currently working branch w
 	<img src="workflow.png" alt="workflow" width="350"/>
 </p>
 
-# Develop new feature
+### Develop new feature
 
 1. Make sure to be in the *develop branch*.
 
@@ -119,7 +119,7 @@ You will automatically be in the new branch.
 
 	GitHub will automatically recognize that the two branches have been merged and close the pull request.
 
-# Publish new source code
+### Publish new source code
 
 When the code in the *develop branch* is good enough and the live code is ready for a new version we need to merge it to the *main branch*. This is done via a temporary branch called a *release branch* in order to keep the *develop branch* alive.
 
